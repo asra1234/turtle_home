@@ -1,0 +1,179 @@
+body{
+    width: 100%;
+    height: 100vh;
+    background-image:url(../images/pexels-photo-1452701.jpeg);
+    background-size: cover;
+    margin: 0px;
+}
+body{
+    margin: 0px;
+}
+#logo{
+    margin: 20px 30px 10px 20px;
+    float: left;
+    display: flex;
+    justify-content: space-between;
+}
+header{
+    top: 0px;
+  width: 100%;
+  height: 17%;
+  position: fixed;
+  background-attachment: fixed;
+  z-index: 900;
+  background-color: #041c34;
+}
+.navbar{
+    width: 100%;
+    margin: auto;
+    padding:0;
+    display: flex;
+    align-items: center;
+   
+       
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0px 20px;
+    position: relative;
+    
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: rgb(108, 108, 182);
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+
+}
+
+.container{
+    width:40%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: left;
+    color: white;
+    animation-name: content;
+    animation-duration: 4s;
+}
+.container p{
+    font-size: 30px;
+    margin-left: 40px;
+    flex-basis: 50%;
+}
+.kosgoda{
+    background-image: url(../images/bey_Kosgoda_530x420.jpg);
+    width: 300px;
+    height: 330px;
+    display: inline-block;
+    cursor: pointer;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 15px 25px;
+    background-position: center;
+    background-size: cover;
+
+}
+.content{
+    flex-basis: 50%;
+    float: right;
+    margin: 30px;
+    margin-bottom: 50px;
+    padding: 99px;
+    transition: transform 0.5s;
+    
+}
+.Bentota{
+    background-image: url(../images/download.jpg);
+    width: 300px;
+    height: 330px;
+    display: inline-block;
+    cursor: pointer;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 15px 25px;
+    background-position: center;
+    background-size: cover;
+    margin: 20px;
+    cursor: pointer;
+    
+
+
+}
+.Bentota:hover{
+    transform: translateY(-10px);
+
+}
+.kosgoda:hover{
+    transform: translateY(-10px);
+}
+.content a{
+    text-decoration: none;
+    color: black;
+}
+
+@media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1024px) 
+  and (orientation: portrait) { 
+    .container {
+        top: 30%;
+        right: 20%;
+        left: 20%;
+        width: 60%;
+    }
+
+    .content{
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        bottom: 7%;
+        width: 100vw !important;
+        
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    }
+  }
+
+
+  @media only screen 
+  and (min-device-width: 374px) 
+  and (max-device-width: 767px) 
+    and (orientation: portrait) { 
+        header{
+        height: 20%;
+        }
+        
+        .container {
+            margin-top: 62%;
+            position: relative;
+            width: 100%;
+        }
+    
+        .content{
+            position: relative;
+            margin: 0;
+            padding: 0;
+            bottom: 7%;
+            width: 100vw !important;
+            
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        }
+    }

@@ -1,0 +1,477 @@
+@import url('http://fonts.googleapis.com/css?family=Lora');
+
+
+body{
+    margin: 0px;
+    background-image:url(../images/pexels-photo-2363330.jpeg);
+    background-size: cover;
+    background-position: center;
+    
+    background-attachment: fixed;
+   
+    background-repeat: no-repeat;
+    
+
+}
+#logo{
+    margin: 20px 30px 10px 20px;
+    float: left;
+    display: flex;
+    justify-content: space-between;
+}
+header{
+    top: 0px;
+  width: 100%;
+  height: 17%;
+  position: fixed;
+  background-attachment: fixed;
+  z-index: 900;
+  background-color: #041c34;
+}
+.navbar{
+    width: 100%;
+    margin: auto;
+    padding:0;
+    display: flex;
+    align-items: center;
+   
+       
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0px 20px;
+    position: relative;
+    
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: rgb(108, 108, 182);
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+
+}
+p{
+    font-size: 20px;
+}
+.text{
+    width: 85%;
+    margin-top: 125px;
+    margin-left: 40px;
+    border:  2px solid black;
+    border-radius: 20px;
+    text-align: justify;
+    padding: 40px;
+    font-size: 20px;
+    color: #fff;
+    position: relative;
+}
+
+.content{
+    float: right;
+    margin-right: 30px;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+.content:hover{
+    transform: translateY(-10px);
+}   
+
+.card{
+    display: inline;
+    width: 50%;
+}
+.card h2{
+    font-family: 'Lora';
+    font-weight: 500;
+    font-style: normal;
+}
+.list{
+    margin: 20px;
+}
+.text1{
+    display: flex;
+    justify-content: space-between;
+}
+.div{
+    margin-left: 30%;
+}
+.green{
+    width: 85%;
+    margin: 65px;
+    border: 4px solid rgb(240, 179, 14);
+    padding: 30px;
+    color: wheat;
+    background-color: #526D82;
+    text-align: left;
+    cursor: pointer;
+   
+}
+
+.green :hover{
+    transform: translateY(-10px);
+}
+.green img{
+    
+    height: 300px;
+    align-items: center;
+    display: flex;
+
+}
+
+.images{
+   
+    width: 100%;
+    margin-top: 25px;
+    
+
+}
+
+.green h3{
+    text-align: center;
+    font-family: 'Lora';
+    font-weight: 400;
+    font-style: italic;
+    font-size: 30px;
+
+}
+.green h4{
+    text-align: left;
+    font-family: 'Lora';
+    font-weight: 400;
+    font-style: italic;
+    font-size: 25px;
+
+}
+.green1{
+    display: flex;
+    width: 85%;
+}
+.olive{
+    margin-left: 70px;
+    width: 70%;
+}
+.turtle_img {
+    margin: 30px;
+    width: 70%;
+    padding: 10px;
+
+
+}
+.turtle_img img {
+    width:94% ;
+    
+    
+}
+
+.table{
+    padding: 15px;
+}
+table,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 15px;
+    color: #fff;
+}
+th{
+    background-color: #041c34;
+}
+.turtle{
+    background-color: #687785;
+}
+.size{
+    background-color: #4f6071;
+}
+.Weight{
+    background-color: #36495d;
+}
+.appea{
+    background-color: #1d3348;
+}
+.diet{
+    background-color: #041c34;
+}
+iframe{
+    margin: 10%;
+    align-items: center;
+}
+footer{
+    width: 100%;
+    background: linear-gradient(to right,#041c34,black);
+    color: white;
+    padding: 53px 0 27px;
+    border-top-left-radius: 125px;
+    font-size: 13px;
+    z-index: 900;
+    position: relative;
+  }
+  #logo1{
+    width: 100px;
+    margin-bottom: 20px;
+  }
+  .row{
+    width: 85%;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer{
+    width: 100%;
+    display: flex;
+  }
+
+
+  .cols, .cols_1{
+    width: 90%;
+    display: flex;
+  }
+  .cols h4{
+    margin-bottom:0px ;
+    text-align: center;
+  }
+  .cols p{
+    text-align: justify;
+  }
+  .cols ul {
+    list-style: none;
+  }
+  .cols_1 ul {
+    list-style: none;
+  }
+  .cols ul li{
+    padding: 10px 0;
+  }
+  .cols_1 ul li{
+    padding: 10px 0;
+  }
+  .cols ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    opacity: 0.7;
+    transition: 0.5s;
+  }
+  .cols_1 ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    opacity: 0.7;
+    transition: 0.5s;
+  }
+  .cols  ul li a:hover{
+    opacity: 1;
+  }
+  .cols_1  ul li a:hover{
+    opacity: 1;
+  }
+  .footer-col p{
+    text-align: center;
+    font-size: 14px;
+  }
+  @media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1024px) 
+ {
+/* ipad */
+
+header{
+    height: 13%;
+    width: 100%;
+}
+
+.navbar {
+    width: 100%;
+    margin: 0;
+}
+.text{
+    width: 78%;
+    margin-top: 22%;
+}
+.text1{
+    flex-direction: column;
+}
+.content{
+    width: 94%;
+    
+}
+.green{
+    margin: 8%;
+    width: 79%;
+}
+.div {
+    margin-left: 5%;
+}
+
+.green img {
+    height: 296px;
+    width: 90%;
+}
+
+.green1 {
+    width: 100%;
+    flex-direction: column;
+}
+
+.table {
+    padding: 26px;
+    width: 92%;
+}
+
+
+footer{
+  width: 100%;
+  bottom: -83px;
+}
+.row{
+margin: 1px;
+width: 97%;
+}
+.cols{
+width: 76%;
+display: flex;
+}
+
+
+}
+
+@media only screen 
+  and (min-device-width: 374px) 
+  and (max-device-width: 767px) 
+  and (orientation: portrait) { 
+    /* iphone */
+    header{
+        height: 16%;
+        width: 75%;
+    }
+    
+    .navbar {
+        width: 75%;
+        margin: 0;
+    }
+    .text{
+        width: 63%;
+        margin-top: 66%;
+    }
+    .text1{
+        flex-direction: column;
+    }
+    .content{
+        width: 94%;
+        
+    }
+    .green{
+        margin: 11%;
+        width: 62%;
+    }
+    .olive {
+        margin-left: 45px;
+        width: 70%;
+    }
+    .div {
+        margin-left: 5%;
+    }
+    
+    .green img {
+        height: 296px;
+        width: 90%;
+    }
+    
+    .green1 {
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    .table {
+            padding: 26px;
+            width: 81%;
+            overflow-x: scroll;
+          }
+    
+    
+    footer{
+      width: 100%;
+      bottom: -83px;
+    padding: 11%;
+    }
+    .row{
+    margin: 1px;
+    width: 97%;
+    }
+    .cols{
+    width: 20%;
+    display: flex;
+    }
+  footer{
+    width: 94%;
+    bottom: -83px;
+  }
+  .row{
+  margin: 1px;
+  width: 97%;
+  }
+  .cols{
+  width: 20%;
+  display: flex;
+  }
+  footer {
+    width: 100%;
+    padding: 53px 1px 3px;
+}
+.footer {
+  width: 27%;
+}
+.cols_1{
+  display: none;
+
+}
+.cols{
+  width: 100%;
+}
+  
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

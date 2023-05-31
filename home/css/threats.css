@@ -1,0 +1,284 @@
+:root{
+  --height:100vh;
+  --white:#ffff;
+  --fontsize:30px;
+
+}
+
+
+.Head{
+    width: 100%;
+    height:var(--height);
+    background-image:url(../images/ca_turtle-plastic-pollution-ocean_021820istock.webp);
+    background-size: cover;
+    background-attachment: fixed;
+    clip-path: circle(180vh at 50% -80%);
+    
+}
+.Head p{
+    padding-top: 170px;
+    font-size: 40px;
+    text-align: center;
+    color:var(--white);
+
+}
+#logo{
+    margin: 20px 30px 10px 20px;
+    float: left;
+    display: flex;
+    justify-content: space-between;
+}
+header{
+  width: 100%;
+  height: 17%;
+  position: fixed;
+  background-attachment: fixed;
+  z-index: 900;
+  background-color: #041c34;
+  top: 0;
+  position: fixed;
+}
+.navbar{
+    width: 100%;
+    margin: auto;
+    padding:0;
+    display: flex;
+    align-items: center;
+   
+       
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0px 20px;
+    position: relative;
+    
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: var(--white);
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: rgb(108, 108, 182);
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+
+}
+h2 {
+    width: 100%; 
+    font-size:var(--fontsize);
+    text-align: center; 
+    border-bottom: 2px solid #000; 
+    line-height: 0.1em;
+    margin: 10px 0 20px; 
+ } 
+ 
+ h2 span { 
+    background-color:#aecac9 ;
+     padding:0 10px; 
+ }
+h3{
+    font-size: 25px;
+}
+
+
+body{
+    background-color: #aecac9;
+}
+.content{
+    width: 85%;
+    align-items: center;
+    margin: 50px;
+    padding: 20px;
+    text-align: justify;
+}
+p{
+    font-size: 20px;
+}
+hr{
+    animation-name: p;
+    animation-duration: 2s;
+    animation-delay: 5s;
+}
+.photo{
+    margin-left:0 200px ;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.photo img{
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+.photo img:hover{
+    transform: translateY(-10px);
+}
+footer{
+    width: 100%;
+    background: linear-gradient(to right,#041c34,black);
+    color: var(--white);
+    padding: 53px 0 27px;
+    border-top-left-radius: 125px;
+    font-size: 13px;
+    z-index: 900;
+    position: relative;
+  }
+  #logo1{
+    width: 100px;
+    margin-bottom: 20px;
+  }
+  .row{
+    width: 85%;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer{
+    width: 100%;
+    display: flex;
+  }
+
+
+  .cols{
+    width: 90%;
+    display: flex;
+  }
+  .cols h4{
+    margin-bottom:0px ;
+    text-align: center;
+  }
+  .cols p{
+    text-align: justify;
+  }
+  .cols ul{
+    list-style: none;
+  }
+  .cols ul li{
+    padding: 10px 0;
+  }
+  .cols ul li a{
+    color: var(--white);
+    text-decoration: none;
+    font-size: 14px;
+    opacity: 0.7;
+    transition: 0.5s;
+  }
+  .cols ul li a:hover{
+    opacity: 1;
+  }
+  .footer-col p{
+    text-align: center;
+    font-size: 14px;
+  }
+  @keyframes p{
+    from{width: 0;}
+    to{width: 100%;}
+  }
+  
+@media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1024px) 
+ {
+/* ipad */
+
+header{
+  height: 10%;
+  width: 100%;
+}
+.Head{
+  width: 100%;
+}
+.Head p{
+  width: 56%;
+  height: 51vh;
+  clip-path: circle (91vh at 50% -61%);
+  margin: 14%;
+  padding-left: 7%;
+  padding-top: 20%;
+}
+.container{
+  width: 100%;
+}
+.photo{
+  flex-direction: column;
+}
+
+.content{
+margin: 2%;
+width: 92%;
+}
+.photo img{
+  width: 81%;
+}
+footer{
+  width: 100%;
+  bottom: -83px;
+}
+.row{
+margin: 1px;
+width: 97%;
+}
+.cols{
+width: 20%;
+display: flex;
+}
+
+
+}
+
+@media only screen 
+  and (min-device-width: 374px) 
+  and (max-device-width: 767px) 
+  and (orientation: portrait) { 
+    /* iphone */
+    
+header{
+  width: 100%;
+  height: 19%;
+}
+.Head{
+  width: 100%;
+  padding: 1%;
+}
+.Head p{
+  width: 60%;
+  height: 39vh;
+    clip-path: circle (91vh at 50% -61%);
+    margin: 13%;
+    padding-left: 7%;
+    padding-top: 82%;
+    font-size: 100%;
+}
+.container{
+  width: 92%;
+}
+.photo{
+  flex-direction: column;
+}
+.content p{
+  width: 100%;
+    font-size: 100%;
+}
+.content{
+  width: 92%;
+  margin: 4px;
+}
+.footer{
+display: none;
+}
+
+}
+
+
